@@ -5,12 +5,6 @@ def oxford_comma(array)
     array.join(" and ")
   else
     array.insert(-2, "and")
-    array.each do |word|
-      if word != "and"
-        array.join(", ")
-      else
-        array.join
-      end
-    end
+    array.join(", ")
   end
 end
