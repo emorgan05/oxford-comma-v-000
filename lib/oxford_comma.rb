@@ -1,5 +1,3 @@
-require "pry"
-
 def oxford_comma(array)
   if array.count == 1
     array.join
@@ -7,11 +5,8 @@ def oxford_comma(array)
     array.join(" and ")
   else
     last_word = array.last
-    changed_array = array.pop
-    binding.pry
+    changed_array = array[0...-1]
     string = changed_array.join(", ")
     string << ", and #{last_word}"
   end
 end
-
-oxford_comma(["banana", "apple", "mango", "starfruit"])
