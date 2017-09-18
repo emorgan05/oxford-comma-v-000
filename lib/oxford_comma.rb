@@ -13,3 +13,5 @@ def oxford_comma(array)
     string << ", and #{last_word}"
   end
 end
+
+oxford_comma(["banana", "apple", "mango", "starfruit"])
